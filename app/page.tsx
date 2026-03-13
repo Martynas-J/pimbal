@@ -41,7 +41,7 @@ export default function Home() {
     width: 15,
     height: 100,
   });
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
   const CANVAS_WIDTH = 800;
